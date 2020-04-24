@@ -4,10 +4,10 @@ def line(katz_deli)
         puts "The line is currently empty."
     else
         new_arr = [] 
-        number = 1 
+        number = 1
         katz_deli.each do |customer|
             new_arr << "#{number}. #{customer}"
-            number += 1 
+        number += 1
         end  
         puts  "The line is currently: #{new_arr.join(" ")}"
     end  
@@ -26,3 +26,4 @@ def now_serving(other_deli)
         other_deli.shift 
     end 
 end
+
